@@ -41,7 +41,7 @@
 % Manual settings%
 % =========================================================================== %
 
-\title{Project proposal}
+\title{PDF Guard}
 \author{Vojtech Stepan, Lukesh Damakuntla}
 \date{\today}
 
@@ -52,11 +52,31 @@
 
 \maketitle
 
-\section*{Short description}
-
+\section*{The problem}
 For our project we will like to create a GUI application,
 which will allow user to conveniently add metadata to a .pdf file,
 which will signalize that he do not give a permission to process the file with LLM.
+
+\section*{Who cares}
+We. And possibly it cares every pdf file author who publish his work.
+
+\section*{How you’ll know it works}
+We can check the processed file metadata, if they contain the new added desire
+part and persist the original one. However we can not guarantee that LLM's will
+respect it.
+
+\section*{Code}
+We will start from scratch.
+
+\section*{Who does what}
+We assume that the work will be complementary, so that each of us has sufficient awareness of all the important parts of the project.
+It is difficult to say what everyone will do if we want to avoid waterfall.
+
+\section*{The biggest risk}
+
+The biggest risk is that other tools try to prevent documents to be use only for
+training, not to guard against proceeding it on trained model. And there may be
+a good reason for it.
 
 \section*{Motivation}
 
@@ -64,15 +84,6 @@ We want to build such application, because we feel that such tool is missing.
 When we were search for this, we firstly found \href{https://pdfa.org/defending-your-pdfs-from-ai-scraping/}{this} technical guide.
 However we imagine to found some tools looking similar as for \href{https://www.ilovepdf.com/merge_pdf}{merging pdf}.
 We think that the tool to be used by ordinary end users has to look more like the second one than first.
-
-\section*{How we know it works}
-
-We can check the processed file metadata, if they contain the new added desire
-part and persist the original one. However we can not guarantee them LLM's will
-respect it.
-
-\section*{Who cares}
-Possibly it cares every pdf file author who publish his work.
 
 \section*{Possible extension}
 
