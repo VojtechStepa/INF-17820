@@ -1,0 +1,82 @@
+% =========================================================================== %
+% Header %
+% =========================================================================== %
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage[dvipsnames]{xcolor}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{pstricks-add}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage[thinc]{esdiff}
+\usepackage{tcolorbox}
+\usepackage{marvosym}
+\usepackage{amssymb}
+
+% compact lists: no extra vertical space between/around items
+\usepackage{enumitem}
+\setlist{nosep, leftmargin=*}
+
+% verbatim blocks that wrap long lines (used for samples without line breaks)
+\usepackage{fvextra}
+
+\usepackage{setspace}
+\setstretch{1.5}
+
+\usepackage{geometry}
+\geometry{a4paper,
+    top=25mm,
+    left=25mm,
+    right=25mm,
+    bottom=25mm,
+}
+\setlength{\parindent}{0.8cm}
+\usepackage[T1]{fontenc}
+\usepackage{anyfontsize}
+\usepackage{t1enc}
+
+% =========================================================================== %
+% Manual settings%
+% =========================================================================== %
+
+\title{Project proposal}
+\author{Vojtech Stepan, Lukesh TODO}
+\date{\today}
+
+% =========================================================================== %
+% Main body %
+% =========================================================================== %
+\begin{document}
+
+\maketitle
+
+\section*{Short description}
+
+For our project we will like to create a GUI application,
+which will allow user to conveniently add metadata to a .pdf file,
+which will signalize that he do not give a permission to process the file with LLM.
+
+\section*{Motivation}
+
+We want to build such application, because we feel that such tool is missing.
+When we were search for this, we firstly found \href{https://pdfa.org/defending-your-pdfs-from-ai-scraping/}{this} technical guide.
+However we imagine to found some tools looking similar as for \href{https://www.ilovepdf.com/merge_pdf}{merging pdf}.
+We think that the tool to be used by ordinary end users has to look more like the second one than first.
+
+\section*{How we know it works}
+
+We can check the processed file metadata, if they contain the new added desire
+part and persist the original one. However we can not guarantee them LLM's will
+respect it.
+
+\section*{Who cares}
+Possibly it cares every pdf file author who publish his work.
+
+\section*{Possible extension}
+
+Natural extension for this project is to add support for other file types (e.g. epub).
+In principle the only requirement to support is new data format is that the new format has to have support for metadata.
+
+\end{document}
