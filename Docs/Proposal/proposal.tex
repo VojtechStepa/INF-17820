@@ -22,6 +22,18 @@
 % verbatim blocks that wrap long lines (used for samples without line breaks)
 \usepackage{fvextra}
 
+% tighter spacing around section headings: {left}{before}{after}
+\usepackage{titlesec}
+\titleformat{\section}{\singlespacing\normalfont\large\bfseries}{\thesection}{1em}{}
+\titlespacing*{\section}{0pt}{0.8ex plus .3ex minus .2ex}{0.2ex plus .1ex}
+
+% compact title block
+\usepackage{titling}
+\setlength{\droptitle}{-4em}
+\posttitle{\par\end{center}\vspace{-0.5em}}
+\postauthor{\end{tabular}\par\end{center}\vspace{-0.8em}}
+\postdate{\par\end{center}\vspace{-2.5em}}
+
 \usepackage{setspace}
 \setstretch{1.5}
 
